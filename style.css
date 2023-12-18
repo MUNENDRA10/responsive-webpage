@@ -415,7 +415,7 @@ body {
 
 .toolbtn {
     margin: 4%;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -445,31 +445,87 @@ body {
     box-shadow: inset 10px 0px 0px var(--btn-yellow);
 }
 
+
+
+
+
+
+
 /* Section 8 */
 
 .section8 {
     background-image: url(./Images/./s3.png);
     background-size: cover;
-    height: auto;
     padding: 2rem 0;
 }
 
 .eight {
     margin: 0 3%;
-    padding: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    flex: 1;
+
 }
 
 .section8left {
-    width: 100%;
+    display: block;
+    width: 50%;
     padding: 0 2%;
     box-sizing: border-box;
 }
 
 .section8right {
-    width: 100%;
-    margin-top: 2rem;
+    width: 50%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+}
+
+
+
+@media (max-width: 992px) {
+    .section8left {
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+    }
+
+
+    .response3{
+        width: 90%;
+    }
+
+
+    .eight {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+}
+
+@media (max-width: 1160px) {
+
+    #viewbtn,
+    #applynowbtn{
+        font-size: 1em;
+        width: 8rem;
+    }
+
+
+    #sec8p1 {
+        font-size: 0.3rem;
+        font-weight: 500;
+    }
+    
+    #sec8h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
 }
 
 .sec8img img {
@@ -479,7 +535,7 @@ body {
 
 
 #sec8p1 {
-    font-size: 20%;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -513,7 +569,7 @@ td {
     margin-top: 1.5rem;
     width: 14rem;
     font-size: 2rem;
-    line-height: 2.5;
+    line-height: 2;
     margin-right: 1rem;
     border: 2px solid var(--dark-blue);
     border-radius: 10px;
@@ -527,40 +583,30 @@ td {
     color: var(--white);
 }
 
-.logocap {
-    margin-top: 10%;
-    letter-spacing: 4px;
-    color: var(--light-blue);
-}
 
 .forcolor {
     color: var(--dark-blue);
 }
 
-.logo {
-    position: relative;
-    width: 30%;
-    bottom: 9rem;
-    right: -25rem;
-}
 
-@media only screen and (min-width: 800px) {
-    .section8left {
-        width: 50%;
-    }
 
-    .section8right {
-        width: 50%;
-        margin-top: 0;
-        /* Remove margin on larger screens */
-    }
 
-    .logo {
-        width: 30%;
-        bottom: 9rem;
-        right: -25rem;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* section 9 */
 .section9 {
